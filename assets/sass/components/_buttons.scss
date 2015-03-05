@@ -84,7 +84,7 @@
 }
 
 input[type="submit"] {
-	@include neat-buttons($button-bg: #000, $border-radius: 0, $border-color: #555 );
+	@include neat-buttons($button-bg: $primary-color, $button-padding: 8px, $border-radius: 0, $border-color: $primary-color );
 	margin: 0;
 	padding: 8px;
 		&:hover {
@@ -92,6 +92,7 @@ input[type="submit"] {
 			border-color: darken($secondary-color, 5%) !important;
 			padding: 8px;
 		}
+
 }
 input#s {
 	@include float(left);
