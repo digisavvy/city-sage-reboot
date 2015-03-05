@@ -1,0 +1,59 @@
+#morphsearch {
+	input#searchsubmit {
+		display: none !important;
+	}
+}
+.hero-banner {
+	position: relative;
+}
+.site-branding {
+	color: #FFF;
+	display: block;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	padding: 40px;
+	position: absolute;
+	text-align: center;
+	width: 600px;
+	height: 200px;
+
+	.site-title {
+		font-family: $title;
+
+		@include media($sm) {
+			@include fontSize(35px);
+		}
+		@include media($smbg) {
+			@include fontSize(55px);
+		}
+		@include media($md) {
+			@include fontSize(75px);
+		}
+
+		a,a:visited {
+			color: #FFF;
+			line-height: 1;
+		}
+
+	}
+
+	.site-description {
+		padding: 25px 0;
+		@include fontSize(20px);
+
+		@include media($sm) {
+			@include fontSize(15px);
+		}
+		@include media($smbg) {
+			@include fontSize(18px);
+		}
+		@include media($md) {
+			@include fontSize(25px);
+		}
+		font-family: $content;
+		font-style: italic;
+	}
+}

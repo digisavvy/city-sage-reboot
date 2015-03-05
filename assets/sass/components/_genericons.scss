@@ -1,0 +1,80 @@
+.format-standard {
+	 h1.entry-title {
+		position: relative;
+
+		&:before {
+		content: '\f100';
+		font-size: 64px;
+		font-family: Genericons;
+		font-weight: normal;
+		position: absolute;
+		left: -70px;
+		background: #FFF;
+		bottom: -14px;
+		}
+	}
+}
+.format-image {
+	 h1.entry-title {
+		position: relative;
+
+		&:before {
+		content: '\f102';
+		font-size: 64px;
+		font-family: Genericons;
+		font-weight: normal;
+		position: absolute;
+		left: -70px;
+		background: #FFF;
+		bottom: -14px;
+		}
+	}
+}
+.format-gallery {
+	 h1.entry-title {
+		position: relative;
+
+		&:before {
+		content: '\f104';
+		font-size: 64px;
+		font-family: Genericons;
+		font-weight: normal;
+		position: absolute;
+		left: -70px;
+		background: #FFF;
+		bottom: -14px;
+		}
+	}
+}
+.format-gallery {
+	 h1.entry-title {
+		position: relative;
+
+		&:before {
+		content: '\f104';
+		font-size: 64px;
+		font-family: Genericons;
+		font-weight: normal;
+		position: absolute;
+		left: -70px;
+		background: #FFF;
+		bottom: -14px;
+		}
+	}
+}
+.format-gallery {
+	 h1.entry-title {
+		position: relative;
+
+		&:before {
+		content: '\f103';
+		font-size: 64px;
+		font-family: Genericons;
+		font-weight: normal;
+		position: absolute;
+		left: -70px;
+		background: #FFF;
+		bottom: -14px;
+		}
+	}
+}
