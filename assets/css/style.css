@@ -762,6 +762,9 @@ h1 {
   font-family: "Gentium Basic", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   text-transform: capitalize;
 }
+h1 .entry-title {
+  font-weight: 400;
+}
 
 h2 {
   font-size: 25px;
@@ -864,7 +867,6 @@ ol:nth-child(n+2) {
 
 h1.entry-title a, a:visited {
   color: #4E6767;
-  font-weight: 700;
 }
 h1.entry-title a:hover, a:visited:hover {
   color: #BD946E;
@@ -3405,37 +3407,37 @@ h1.entry-title a:hover, a:visited:hover {
 }
 
 input[type="submit"] {
-  background: #000;
-  border: solid 5px #555;
+  background: #4E6767;
+  border: solid 5px #4E6767;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   clear: both;
   font-family: "Gentium Basic", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   margin: 10px 0;
-  padding: 20px;
+  padding: 8px;
   -webkit-transition: all 200ms ease-in-out;
           transition: all 200ms ease-in-out;
   margin: 0;
   padding: 8px;
 }
 input[type="submit"]:focus {
-  background: black;
-  border: solid 5px #222222;
+  background: #435858;
+  border: solid 5px #222d2d;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   font-family: "Gentium Basic", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  padding: 20px;
+  padding: 8px;
 }
 input[type="submit"]:hover {
-  background: black;
-  border: solid 5px #222222;
+  background: #435858;
+  border: solid 5px #222d2d;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   font-family: "Gentium Basic", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  padding: 20px;
+  padding: 8px;
 }
 input[type="submit"]:hover {
   background-color: #BD946E;
@@ -4063,6 +4065,7 @@ body {
   max-width: 200px;
 }
 .flexnav li {
+  font-family: "Gentium Basic", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 100%;
   position: relative;
   overflow: hidden;
@@ -4079,7 +4082,7 @@ body {
 }
 .flexnav li a:hover {
   background: #BD946E;
-  color: #4E6767 !important;
+  color: #BD946E;
 }
 .flexnav li a:focus {
   background: #fff;
@@ -4419,7 +4422,12 @@ ul.nav-menu li.current_page_item {
 }
 
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0 0 2.5em;
+}
+
+article {
+  border-bottom: dashed 1px #ccc;
+  padding-bottom: 50px;
 }
 
 .byline,
@@ -4766,6 +4774,10 @@ footer .footer-right {
 }
 footer .footer-right:last-child {
   margin-right: 0;
+}
+
+footer.entry-meta {
+  padding: 0 !important;
 }
 
 /*--------------------------------------------------------------
