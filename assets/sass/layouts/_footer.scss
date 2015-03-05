@@ -3,6 +3,7 @@ footer {
 	margin: 0 auto;
 	padding: 0 40px;
 	width: 100%;
+
 	.site-info {
 		margin: auto;
 		width: 100%;
@@ -21,4 +22,7 @@ footer {
 		padding: 10px;
 		@include text-align(right);
 	}
+}
+footer.entry-meta {
+	padding: 0 !important;
 }

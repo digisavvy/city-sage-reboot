@@ -53,7 +53,9 @@ h1 {
 	color: $primary-color;
 	font-family: $title;
 	text-transform: capitalize;
-
+	.entry-title {
+		font-weight: 400;
+	}
 }
 
 h2 {
@@ -137,7 +139,7 @@ ol {
 }
 h1.entry-title 	a, a:visited {
 	color: $primary-color;
-	font-weight: 700;
+	// font-weight: 700;
 	&:hover {
 		color: $secondary-color;
 	}
