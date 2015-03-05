@@ -1,80 +1,117 @@
+%psuedo-post-format-block {
+	color: $secondary-color;
+	font-size: 32px;
+	font-family: Genericons;
+	font-weight: normal;
+	position: absolute;
+	left: -50px;
+	background: #FFF;
+	width: 32px;
+	padding: 5px 0 5px 10px;
+	right: 10px;
+	bottom: 0;
+}
+%entry-title {
+	position: relative;
+}
+
 .format-standard {
-	 h1.entry-title {
-		position: relative;
+	h1.entry-title {
+		@extend %entry-title;
 
 		&:before {
-		content: '\f100';
-		font-size: 64px;
-		font-family: Genericons;
-		font-weight: normal;
-		position: absolute;
-		left: -70px;
-		background: #FFF;
-		bottom: -14px;
+			@extend %psuedo-post-format-block;
+			content: '\f100';
+		}
+	}
+}
+.format-aside {
+	h1.entry-title {
+		@extend %entry-title;
+
+		&:before {
+			@extend %psuedo-post-format-block;
+			content: '\f101';
 		}
 	}
 }
 .format-image {
-	 h1.entry-title {
-		position: relative;
+	h1.entry-title {
+		@extend %entry-title;
 
 		&:before {
-		content: '\f102';
-		font-size: 64px;
-		font-family: Genericons;
-		font-weight: normal;
-		position: absolute;
-		left: -70px;
-		background: #FFF;
-		bottom: -14px;
+			@extend %psuedo-post-format-block;
+			content: '\f102';
 		}
 	}
 }
 .format-gallery {
-	 h1.entry-title {
-		position: relative;
+	h1.entry-title {
+		@extend %entry-title;
 
 		&:before {
-		content: '\f104';
-		font-size: 64px;
-		font-family: Genericons;
-		font-weight: normal;
-		position: absolute;
-		left: -70px;
-		background: #FFF;
-		bottom: -14px;
+			@extend %psuedo-post-format-block;
+			content: '\f103';
 		}
 	}
 }
-.format-gallery {
-	 h1.entry-title {
-		position: relative;
+.format-video {
+	h1.entry-title {
+		@extend %entry-title;
 
 		&:before {
-		content: '\f104';
-		font-size: 64px;
-		font-family: Genericons;
-		font-weight: normal;
-		position: absolute;
-		left: -70px;
-		background: #FFF;
-		bottom: -14px;
+			@extend %psuedo-post-format-block;
+			content: '\f104';
 		}
 	}
 }
-.format-gallery {
-	 h1.entry-title {
-		position: relative;
+.format-status {
+	h1.entry-title {
+		@extend %entry-title;
 
 		&:before {
-		content: '\f103';
-		font-size: 64px;
-		font-family: Genericons;
-		font-weight: normal;
-		position: absolute;
-		left: -70px;
-		background: #FFF;
-		bottom: -14px;
+			@extend %psuedo-post-format-block;
+			content: '\f105';
+		}
+	}
+}
+.format-quote {
+	h1.entry-title {
+		@extend %entry-title;
+
+		&:before {
+			@extend %psuedo-post-format-block;
+			content: '\f106';
+		}
+	}
+}
+.format-link {
+	h1.entry-title {
+		@extend %entry-title;
+
+		&:before {
+			@extend %psuedo-post-format-block;
+			content: '\f107';
+		}
+	}
+}
+.format-chat {
+	h1.entry-title {
+		@extend %entry-title;
+
+		&:before {
+			@extend %psuedo-post-format-block;
+			content: '\f108';
+		}
+	}
+}
+.format-audio {
+	h1.entry-title {
+		@extend %entry-title;
+
+		&:before {
+			@extend %psuedo-post-format-block;
+			content: '\f109';
 		}
 	}
 }
