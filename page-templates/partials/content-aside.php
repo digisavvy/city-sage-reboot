@@ -8,7 +8,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
 		<?php tha_entry_top(); ?>
 	<header class="entry-header">
-
+		<?php if ( 'post' == get_post_type() ) : ?>
+			<div class="entry-meta">
+				<span class="genericon genericon-time"></span> <?php some_like_it_neat_posted_on(); ?>
+			</div><!-- .entry-meta -->
+		<?php
+		endif; ?>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 	</header><!-- .entry-header -->
