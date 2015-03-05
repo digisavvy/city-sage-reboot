@@ -3236,82 +3236,70 @@ h1.entry-title a:hover, a:visited:hover {
   font-weight: normal;
   src: url("../../assets/webfonts/Genericons.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Genericons.woff") format("woff");
 }
-.format-standard h1.entry-title {
+.format-standard h1.entry-title:before, .format-aside h1.entry-title:before, .format-image h1.entry-title:before, .format-gallery h1.entry-title:before, .format-video h1.entry-title:before, .format-status h1.entry-title:before, .format-quote h1.entry-title:before, .format-link h1.entry-title:before, .format-chat h1.entry-title:before, .format-audio h1.entry-title:before {
+  color: #BD946E;
+  font-size: 32px;
+  font-family: Genericons;
+  font-weight: normal;
+  position: absolute;
+  left: -50px;
+  background: #FFF;
+  width: 32px;
+  padding: 5px 0 5px 10px;
+  right: 10px;
+  bottom: 0;
+}
+
+.format-standard h1.entry-title, .format-aside h1.entry-title, .format-image h1.entry-title, .format-gallery h1.entry-title, .format-video h1.entry-title, .format-status h1.entry-title, .format-quote h1.entry-title, .format-link h1.entry-title, .format-chat h1.entry-title, .format-audio h1.entry-title {
   position: relative;
 }
+
 .format-standard h1.entry-title:before {
   content: '\f100';
-  font-size: 64px;
-  font-family: Genericons;
-  font-weight: normal;
-  position: absolute;
-  left: -70px;
-  background: #FFF;
-  bottom: -14px;
 }
 
-.format-image h1.entry-title {
-  position: relative;
+.format-aside h1.entry-title:before {
+  content: '\f101';
 }
+
 .format-image h1.entry-title:before {
   content: '\f102';
-  font-size: 64px;
-  font-family: Genericons;
-  font-weight: normal;
-  position: absolute;
-  left: -70px;
-  background: #FFF;
-  bottom: -14px;
 }
 
-.format-gallery h1.entry-title {
-  position: relative;
-}
-.format-gallery h1.entry-title:before {
-  content: '\f104';
-  font-size: 64px;
-  font-family: Genericons;
-  font-weight: normal;
-  position: absolute;
-  left: -70px;
-  background: #FFF;
-  bottom: -14px;
-}
-
-.format-gallery h1.entry-title {
-  position: relative;
-}
-.format-gallery h1.entry-title:before {
-  content: '\f104';
-  font-size: 64px;
-  font-family: Genericons;
-  font-weight: normal;
-  position: absolute;
-  left: -70px;
-  background: #FFF;
-  bottom: -14px;
-}
-
-.format-gallery h1.entry-title {
-  position: relative;
-}
 .format-gallery h1.entry-title:before {
   content: '\f103';
-  font-size: 64px;
-  font-family: Genericons;
-  font-weight: normal;
-  position: absolute;
-  left: -70px;
-  background: #FFF;
-  bottom: -14px;
+}
+
+.format-video h1.entry-title:before {
+  content: '\f104';
+}
+
+.format-status h1.entry-title:before {
+  content: '\f105';
+}
+
+.format-quote h1.entry-title:before {
+  content: '\f106';
+}
+
+.format-link h1.entry-title:before {
+  content: '\f107';
+}
+
+.format-chat h1.entry-title:before {
+  content: '\f108';
+}
+
+.format-audio h1.entry-title:before {
+  content: '\f109';
 }
 
 /*--------------------------------------------------------------
 5.0 Components/Add-ons
 --------------------------------------------------------------*/
 #submit {
-  background: #000;
-  border: solid 5px #555;
+  background: #4E6767;
+  border: solid 5px #4E6767;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3323,8 +3311,8 @@ h1.entry-title a:hover, a:visited:hover {
           transition: all 200ms ease-in-out;
 }
 #submit:focus {
-  background: black;
-  border: solid 5px #222222;
+  background: #435858;
+  border: solid 5px #222d2d;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3332,8 +3320,8 @@ h1.entry-title a:hover, a:visited:hover {
   padding: 20px;
 }
 #submit:hover {
-  background: black;
-  border: solid 5px #222222;
+  background: #435858;
+  border: solid 5px #222d2d;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3341,7 +3329,7 @@ h1.entry-title a:hover, a:visited:hover {
   padding: 20px;
 }
 #submit:hover {
-  background-color: #555;
+  background-color: #BD946E;
 }
 
 .neat-button {
@@ -3450,7 +3438,8 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 input[type="submit"]:hover {
-  background-color: #555;
+  background-color: #BD946E;
+  border-color: #b5875c !important;
   padding: 8px;
 }
 
@@ -4421,10 +4410,6 @@ ul.nav-menu li.current_page_item {
 --------------------------------------------------------------*/
 /* =Content
 ----------------------------------------------- */
-.sticky {
-  background: #f1f1f1;
-}
-
 .gallery-caption {
   list-style: none;
 }
@@ -4485,7 +4470,6 @@ ul.nav-menu li.current_page_item {
 
 .sticky {
   float: left;
-  padding: 20px;
 }
 
 /* =Breadcrumbs
