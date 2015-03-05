@@ -1,8 +1,5 @@
 /* =Content
 ----------------------------------------------- */
-.sticky {
-	background: #f1f1f1;
-}
 .gallery-caption {
 	list-style: none;
 }
@@ -51,7 +48,6 @@
 
 .sticky{
 	@include float(left);
-	padding: 20px;
 }
 .gallery-caption {}
 .bypostauthor {}
