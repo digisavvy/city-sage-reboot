@@ -13,8 +13,8 @@ get_header(); ?>
     <?php while ( have_posts() ) : the_post(); ?>
 
     <?php get_template_part( 'page-templates/partials/content', 'single' ); ?>
-
-    <?php some_like_it_neat_post_nav(); ?>
+	<?php add_rrssb_buttons(); ?>
+	<?php echo get_the_post_navigation(); ?>
 
     <?php
 				// If comments are open or we have at least one comment, load up the comment template

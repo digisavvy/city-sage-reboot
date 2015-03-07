@@ -262,6 +262,25 @@ function some_like_it_neat_add_customizer_theme_options($wp_customize) {
 			'panel' => 'site_content',
 		) );
 
+		$wp_customize->add_setting(
+			'some-like-it-neat_hide_WordPress_credits',
+				array(
+					'default'   => 'no'
+			)
+		);
+
+		$wp_customize->add_control(
+			'some-like-it-neat_hide_WordPress_credits',
+				array(
+					'section'	=> 'content_extras',
+					'label'		=> __( 'Hide WordPress Credits in Footer?', 'some-like-it-neat' ),
+					'type'		=> 'radio',
+					'choices'	=> array(
+						'yes'	=> 'Yes',
+						'no'		=> 'No'
+					)
+				)
+			);
 		/**
 		* Enable/Disable Post Format support
 		* @link http://codex.wordpress.org/Post_Formats
@@ -335,6 +354,78 @@ function some_like_it_neat_add_customizer_theme_options($wp_customize) {
 				)
 			);
 
+		/**
+		* Enable/Disable Use of RRSSB Share Buttons
+		* See /library/vendors/extras.php
+		* @link https://github.com/kni-labs/rrssb
+		*/
+		$wp_customize->add_setting(
+			'some-like-it-neat_rrssb_share_buttons',
+				array(
+					'default'   => 'yes'
+			)
+		);
+
+		$wp_customize->add_control(
+			'some-like-it-neat_rrssb_share_buttons',
+				array(
+					'section'	=> 'content_extras',
+					'description'	=> __( 'Social Share Buttons that appear below single posts and pages. You may select the services to enable below.', 'some-like-it-neat' ),
+					'label'		=> __( 'Use rrssb share buttons?', 'some-like-it-neat' ),
+					'type'		=> 'radio',
+					'choices'	=> array(
+						'yes'	=> 'Yes',
+						'no'		=> 'No'
+					)
+				)
+			);
+
+		// Checkbox control
+		$wp_customize->add_setting( 'some-like-it-neat_enable_twitter', array(
+		    'default'        => '0',
+		    'sanitize_callback'	=> 'some_like_it_neat_sanitize_checkbox',
+		) );
+		$wp_customize->add_control( 'some-like-it-neat_enable_twitter', array(
+		    'label'		=> __( 'Enable Twitter Sharing?', 'some-like-it-neat' ),
+		    'section' => 'content_extras',
+		    'type'    => 'checkbox',
+		) );
+		$wp_customize->add_setting( 'some-like-it-neat_enable_facebook', array(
+		    'default'        => '0',
+		    'sanitize_callback'	=> 'some_like_it_neat_sanitize_checkbox',
+		) );
+		$wp_customize->add_control( 'some-like-it-neat_enable_facebook', array(
+		    'label'		=> __( 'Enable Facebook Sharing?', 'some-like-it-neat' ),
+		    'section' => 'content_extras',
+		    'type'    => 'checkbox',
+		) );
+		$wp_customize->add_setting( 'some-like-it-neat_enable_googleplus', array(
+		    'default'        => '0',
+		    'sanitize_callback'	=> 'some_like_it_neat_sanitize_checkbox',
+		) );
+		$wp_customize->add_control( 'some-like-it-neat_enable_googleplus', array(
+		    'label'		=> __( 'Enable Google+ Sharing?', 'some-like-it-neat' ),
+		    'section' => 'content_extras',
+		    'type'    => 'checkbox',
+		) );
+		$wp_customize->add_setting( 'some-like-it-neat_enabled_linkedin', array(
+		    'default'        => '0',
+		    'sanitize_callback'	=> 'some_like_it_neat_sanitize_checkbox',
+		) );
+		$wp_customize->add_control( 'some-like-it-neat_enabled_linkedin', array(
+		    'label'		=> __( 'Enable Linkedin Sharing?', 'some-like-it-neat' ),
+		    'section' => 'content_extras',
+		    'type'    => 'checkbox',
+		) );
+		$wp_customize->add_setting( 'some-like-it-neat_enable_email', array(
+		    'default'        => '0',
+		    'sanitize_callback'	=> 'some_like_it_neat_sanitize_checkbox',
+		) );
+		$wp_customize->add_control( 'some-like-it-neat_enable_email', array(
+		    'label'		=> __( 'Enable Email Sharing?', 'some-like-it-neat' ),
+		    'section' => 'content_extras',
+		    'type'    => 'checkbox',
+		) );
 }
 add_action( 'customize_register', 'some_like_it_neat_add_customizer_theme_options' );
 
