@@ -128,13 +128,13 @@ ol {
 	text-transform: capitalize;
 
 	@include media($sm) {
-		@include fontSize(18px);
-	}
-	@include media($smbg) {
 		@include fontSize(25px);
 	}
-	@include media($md) {
+	@include media($smbg) {
 		@include fontSize(35px);
+	}
+	@include media($md) {
+		@include fontSize(43px);
 	}
 }
 h1.entry-title 	a, a:visited {
@@ -149,6 +149,11 @@ h1.entry-title 	a, a:visited {
 	@include fontSize(14px);
 	color: $primary-color;
 	font-weight: 400;
+	a, a:visited {
+		&:hover {
+			color: $secondary-color;
+		}
+	}
 }
 #primary,
 #secondary {

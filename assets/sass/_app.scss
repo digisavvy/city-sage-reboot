@@ -62,7 +62,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 4.0 Typography
 --------------------------------------------------------------*/
-@import "layouts/typography";
+@import "components/typography";
 @import "../../assets/bower_components/font-awesome/scss/font-awesome";
 @import "components/webfonts";
 @import "components/genericons";
@@ -76,6 +76,7 @@ and Blueprint http://www.blueprintcss.org/
 @import "components/buttons";
 @import "components/infinite-scroll";
 @import "components/search-overlay";
+@import "components/rrssb";
 
 /*--------------------------------------------------------------
 6.0 Layout and Structure
