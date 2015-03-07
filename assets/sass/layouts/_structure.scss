@@ -65,7 +65,7 @@ body {
 		padding: 30px;
 	}
 	@include media($md) {
-		@include span-columns( 2 );
+		@include span-columns( 2.25 );
 		@include omega( block );
 	}
 	margin: 20px auto;

@@ -7,6 +7,10 @@ footer {
 	.site-info {
 		margin: auto;
 		width: 100%;
+		.wordpress:before {
+			font-family: Genericons;
+			content: '\f205';
+		}
 	}
 	.footer-left {
 		@include span-columns(6);
