@@ -1,16 +1,23 @@
 %psuedo-post-format-block {
-	color: $secondary-color;
-	font-size: 32px;
-	font-family: Genericons;
-	font-weight: normal;
-	position: absolute;
-	left: -50px;
-	background: #FFF;
-	width: 32px;
-	padding: 5px 0 5px 10px;
-	right: 10px;
-	bottom: 0;
+	@include media($sm) {
+		background-color: #FFF;
+		color: rgba(189, 148, 110, 0.45);
+		font-size: 32px;
+		font-family: Genericons;
+		font-weight: normal;
+		height: 32px;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		width: 32px;
+	}
+	@include media($md) {
+		bottom: 55px;
+		left: -50px;
+		top: 15%;
+	}
 }
+
 %entry-title {
 	position: relative;
 }
@@ -42,6 +49,7 @@
 		&:before {
 			@extend %psuedo-post-format-block;
 			content: '\f102';
+			padding: 0 10px;
 		}
 	}
 }

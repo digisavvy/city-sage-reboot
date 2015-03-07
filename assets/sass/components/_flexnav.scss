@@ -45,6 +45,7 @@ $fourth_level: transparent;
 		font-size: 100%;
 		position: relative;
 		overflow: hidden;
+		text-align: center;
 	}
 	li a {
 		position: relative;
@@ -61,7 +62,7 @@ $fourth_level: transparent;
 			color: $secondary-color;
 		}
 		 &:focus {
-		 	background: #fff;
+		 	background: #FFF;
 		 }
 	}
 	li ul {
