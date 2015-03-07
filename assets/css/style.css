@@ -848,20 +848,20 @@ ol:nth-child(n+2) {
 }
 @media screen and (min-width: 200px) {
   .entry-title {
-    font-size: 18px;
-    font-size: 1.125rem;
-  }
-}
-@media screen and (min-width: 480px) {
-  .entry-title {
     font-size: 25px;
     font-size: 1.5625rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .entry-title {
     font-size: 35px;
     font-size: 2.1875rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entry-title {
+    font-size: 43px;
+    font-size: 2.6875rem;
   }
 }
 
@@ -877,6 +877,9 @@ h1.entry-title a:hover, a:visited:hover {
   font-size: 0.875rem;
   color: #4E6767;
   font-weight: 400;
+}
+.entry-meta a:hover, .entry-meta a:visited:hover {
+  color: #BD946E;
 }
 
 #primary,
@@ -3238,18 +3241,26 @@ h1.entry-title a:hover, a:visited:hover {
   font-weight: normal;
   src: url("../../assets/webfonts/Genericons.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Genericons.woff") format("woff");
 }
-.format-standard h1.entry-title:before, .format-aside h1.entry-title:before, .format-image h1.entry-title:before, .format-gallery h1.entry-title:before, .format-video h1.entry-title:before, .format-status h1.entry-title:before, .format-quote h1.entry-title:before, .format-link h1.entry-title:before, .format-chat h1.entry-title:before, .format-audio h1.entry-title:before {
-  color: #BD946E;
-  font-size: 32px;
-  font-family: Genericons;
-  font-weight: normal;
-  position: absolute;
-  left: -50px;
-  background: #FFF;
-  width: 32px;
-  padding: 5px 0 5px 10px;
-  right: 10px;
-  bottom: 0;
+@media screen and (min-width: 200px) {
+  .format-standard h1.entry-title:before, .format-aside h1.entry-title:before, .format-image h1.entry-title:before, .format-gallery h1.entry-title:before, .format-video h1.entry-title:before, .format-status h1.entry-title:before, .format-quote h1.entry-title:before, .format-link h1.entry-title:before, .format-chat h1.entry-title:before, .format-audio h1.entry-title:before {
+    background-color: #FFF;
+    color: rgba(189, 148, 110, 0.45);
+    font-size: 32px;
+    font-family: Genericons;
+    font-weight: normal;
+    height: 32px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .format-standard h1.entry-title:before, .format-aside h1.entry-title:before, .format-image h1.entry-title:before, .format-gallery h1.entry-title:before, .format-video h1.entry-title:before, .format-status h1.entry-title:before, .format-quote h1.entry-title:before, .format-link h1.entry-title:before, .format-chat h1.entry-title:before, .format-audio h1.entry-title:before {
+    bottom: 55px;
+    left: -50px;
+    top: 15%;
+  }
 }
 
 .format-standard h1.entry-title, .format-aside h1.entry-title, .format-image h1.entry-title, .format-gallery h1.entry-title, .format-video h1.entry-title, .format-status h1.entry-title, .format-quote h1.entry-title, .format-link h1.entry-title, .format-chat h1.entry-title, .format-audio h1.entry-title {
@@ -3266,6 +3277,7 @@ h1.entry-title a:hover, a:visited:hover {
 
 .format-image h1.entry-title:before {
   content: '\f102';
+  padding: 0 10px;
 }
 
 .format-gallery h1.entry-title:before {
@@ -3855,6 +3867,429 @@ input[type=search]:focus {
     transform: translate3d(0, -50%, 0) scale3d(0.5, 0.5, 1);
   }
 }
+ul.rrssb-buttons li {
+  display: block;
+}
+
+span.rrssb-text {
+  padding: 0 5px;
+  position: relative;
+  top: 3px;
+}
+
+.rrssb-buttons.large-format li a,
+.rrssb-buttons.large-format li a .rrssb-text {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+.rrssb-buttons,
+.rrssb-buttons li,
+.rrssb-buttons li a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.rrssb-buttons {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.rrssb-buttons li {
+  float: left;
+  height: 100%;
+  line-height: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0 2.5px;
+}
+
+.rrssb-buttons li.rrssb-email a {
+  background-color: #0a88ff;
+}
+
+.rrssb-buttons li.rrssb-email a:hover {
+  background-color: #006ed6;
+}
+
+.rrssb-buttons li.rrssb-facebook a {
+  background-color: #306199;
+}
+
+.rrssb-buttons li.rrssb-facebook a:hover {
+  background-color: #244872;
+}
+
+.rrssb-buttons li.rrssb-tumblr a {
+  background-color: #32506d;
+}
+
+.rrssb-buttons li.rrssb-tumblr a:hover {
+  background-color: #22364a;
+}
+
+.rrssb-buttons li.rrssb-linkedin a {
+  background-color: #007bb6;
+}
+
+.rrssb-buttons li.rrssb-linkedin a:hover {
+  background-color: #005983;
+}
+
+.rrssb-buttons li.rrssb-twitter a {
+  background-color: #26c4f1;
+}
+
+.rrssb-buttons li.rrssb-twitter a:hover {
+  background-color: #0eaad6;
+}
+
+.rrssb-buttons li.rrssb-googleplus a {
+  background-color: #e93f2e;
+}
+
+.rrssb-buttons li.rrssb-googleplus a:hover {
+  background-color: #ce2616;
+}
+
+.rrssb-buttons li.rrssb-youtube a {
+  background-color: #df1c31;
+}
+
+.rrssb-buttons li.rrssb-youtube a:hover {
+  background-color: #b21627;
+}
+
+.rrssb-buttons li.rrssb-reddit a {
+  background-color: #8bbbe3;
+}
+
+.rrssb-buttons li.rrssb-reddit a:hover {
+  background-color: #62a3d9;
+}
+
+.rrssb-buttons li.rrssb-pinterest a {
+  background-color: #b81621;
+}
+
+.rrssb-buttons li.rrssb-pinterest a:hover {
+  background-color: #8a1119;
+}
+
+.rrssb-buttons li.rrssb-pocket a {
+  background-color: #ed4054;
+}
+
+.rrssb-buttons li.rrssb-pocket a:hover {
+  background-color: #e4162d;
+}
+
+.rrssb-buttons li.rrssb-github a {
+  background-color: #444;
+}
+
+.rrssb-buttons li.rrssb-github a:hover {
+  background-color: #2b2b2b;
+}
+
+.rrssb-buttons li.rrssb-instagram a {
+  background-color: #517fa4;
+}
+
+.rrssb-buttons li.rrssb-instagram a:hover {
+  background-color: #406582;
+}
+
+.rrssb-buttons li a {
+  background-color: #ccc;
+  border-radius: 2px;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 100%;
+  padding: 11px 7px 12px 27px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.rrssb-buttons li a .rrssb-icon {
+  display: block;
+  height: 100%;
+  left: 10px;
+  padding-top: 9px;
+  position: absolute;
+  top: 0;
+  width: 10%;
+}
+
+.rrssb-buttons li a .rrssb-icon svg {
+  height: 17px;
+  width: 17px;
+}
+
+.rrssb-buttons li a .rrssb-icon svg path,
+.rrssb-buttons li a .rrssb-icon svg polygon {
+  fill: #fff;
+}
+
+.rrssb-buttons li a .rrssb-text {
+  color: #fff;
+}
+
+.rrssb-buttons li a:active {
+  -webkit-box-shadow: inset 1px 3px 15px 0 rgba(22, 0, 0, 0.25);
+          box-shadow: inset 1px 3px 15px 0 rgba(22, 0, 0, 0.25);
+}
+
+.rrssb-buttons li.small a {
+  padding: 0;
+}
+
+.rrssb-buttons li.small a .rrssb-icon {
+  height: 100%;
+  left: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: auto;
+  width: 100%;
+}
+
+.rrssb-buttons li.small a .rrssb-text {
+  visibility: hidden;
+}
+
+.rrssb-buttons.large-format {
+  height: auto;
+}
+
+.rrssb-buttons.large-format li {
+  height: auto;
+}
+
+.rrssb-buttons.large-format li a {
+  border-radius: 0.2em;
+  font-size: 15px;
+  font-size: 1vw;
+  line-height: 1vw;
+  padding: 7% 0% 7% 12%;
+}
+
+.rrssb-buttons.large-format li a .rrssb-icon {
+  left: 7%;
+  padding-top: 0;
+  width: 12%;
+}
+
+.rrssb-buttons.large-format li a .rrssb-icon svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.rrssb-buttons.large-format li a .rrssb-text {
+  font-size: 15px;
+  font-size: 1vw;
+}
+
+.rrssb-buttons.large-format li a:hover {
+  font-size: 15px;
+  font-size: 1vw;
+  padding: 7% 0% 7% 12%;
+  border-radius: 0.2em;
+}
+
+.rrssb-buttons.small-format {
+  padding-top: 5px;
+}
+
+.rrssb-buttons.small-format li {
+  height: 80%;
+  padding: 0 1.5px;
+}
+
+.rrssb-buttons.small-format li a .rrssb-icon {
+  height: 100%;
+  padding-top: 0;
+}
+
+.rrssb-buttons.small-format li a .rrssb-icon svg {
+  height: 48%;
+  position: relative;
+  top: 6px;
+  width: 80%;
+}
+
+.rrssb-buttons.tiny-format {
+  height: 22px;
+  position: relative;
+}
+
+.rrssb-buttons.tiny-format li {
+  padding-right: 7px;
+}
+
+.rrssb-buttons.tiny-format li a {
+  background-color: transparent;
+  padding: 0;
+}
+
+.rrssb-buttons.tiny-format li a .rrssb-icon svg {
+  height: 70%;
+  width: 100%;
+}
+
+.rrssb-buttons.tiny-format li a:hover,
+.rrssb-buttons.tiny-format li a:active {
+  background-color: transparent;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon svg polygon {
+  fill: #0a88ff;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-email a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #0054a3;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon svg polygon {
+  fill: #306199;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-facebook a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #18304b;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon svg polygon {
+  fill: #32506d;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-tumblr a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #121d27;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon svg polygon {
+  fill: #007bb6;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-linkedin a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #003650;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon svg polygon {
+  fill: #26c4f1;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-twitter a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #0b84a6;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon svg polygon {
+  fill: #e93f2e;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-googleplus a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #a01e11;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon svg polygon {
+  fill: #df1c31;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-youtube a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #84111d;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon svg polygon {
+  fill: #8bbbe3;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-reddit a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #398bcf;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon svg polygon {
+  fill: #b81621;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-pinterest a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #5d0b11;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon svg polygon {
+  fill: #ed4054;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-pocket a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #b61124;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon svg polygon {
+  fill: #444;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-github a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #111;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon svg polygon {
+  fill: #517fa4;
+}
+
+.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon:hover .rrssb-icon svg path,
+.rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon:hover .rrssb-icon svg polygon {
+  fill: #2f4a60;
+}
+
 /*--------------------------------------------------------------
 6.0 Layout and Structure
 --------------------------------------------------------------*/
@@ -3950,7 +4385,7 @@ body {
     float: left;
     display: block;
     margin-right: 4.34783%;
-    width: 30.43478%;
+    width: 34.78261%;
     margin-right: 0;
   }
   #secondary:last-child {
@@ -4069,6 +4504,7 @@ body {
   font-size: 100%;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .flexnav li a {
   position: relative;
@@ -4085,7 +4521,7 @@ body {
   color: #BD946E;
 }
 .flexnav li a:focus {
-  background: #fff;
+  background: #FFF;
 }
 .flexnav li ul {
   display: none;
@@ -4401,7 +4837,9 @@ ul.nav-menu li.current_page_item {
 #primary-nav {
   float: left;
   max-width: 100%;
+  position: relative;
   width: 100%;
+  z-index: 50;
 }
 
 .nav-links a:nth-of-type(2) {
@@ -4540,6 +4978,16 @@ embed,
 iframe,
 object {
   max-width: 100%;
+}
+
+.nav-next:after {
+  font-family: Genericons;
+  content: '\f429';
+}
+
+.nav-previous:before {
+  font-family: Genericons;
+  content: '\f430';
 }
 
 /* =Comments
@@ -4748,6 +5196,10 @@ footer {
 footer .site-info {
   margin: auto;
   width: 100%;
+}
+footer .site-info .wordpress:before {
+  font-family: Genericons;
+  content: '\f205';
 }
 footer .footer-left {
   float: left;
