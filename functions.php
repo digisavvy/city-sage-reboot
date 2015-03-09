@@ -508,3 +508,12 @@ function search_overlay_footer() { ?>
 		})();
 	</script>
 <?php }
+
+// Add Post/Page Navigation
+add_action( 'tha_entry_after', 'some_like_it_neat_post_nav' );
+
+function some_like_it_neat_post_nav() {
+	if ( is_singular() ) :
+		echo get_the_post_navigation();
+	endif;
+}
