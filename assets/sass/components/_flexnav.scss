@@ -48,6 +48,7 @@ $fourth_level: transparent;
 		text-align: center;
 	}
 	li a {
+		background: #FFF;
 		position: relative;
 		display: block;
 		padding: .80em;
@@ -73,9 +74,11 @@ $fourth_level: transparent;
 		z-index: 5;
 
 		li {
+			background: #FFF;
 			font-size: 100%;
 			position: relative;
 			overflow: hidden;
+			width: 300px;
 			&:last-child {
 				border-bottom: 1px solid $third_level;
 			}
