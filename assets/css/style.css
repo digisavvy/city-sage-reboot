@@ -4,11 +4,11 @@
 */
 /*
 Theme Name: Some Like it Neat
-Theme URI: https://github.com/digisavvy/some-like-it-neat
+Theme URI: https://github.com/digisavvy/city-sage-reboot
 Author: Alex Vasquez
 Author URI: http://alexhasnicehair.com
 Description: A simple yet advanced Starter Theme built using _S, Bourbon and Neat (http://underscores.me, http://bourbon.io, http://neat.bourbon.io). Please refer to the README.md file for basic usage instructions and prerequisites. You can always grab the latest version over at http://github.com/digisavvy.some-like-it-neat
-Version: 1.2.4
+Version: 1.0.0
 License: GNU General Public License
 License URI: license.txt
 Text Domain: some_like_it_neat
@@ -4507,6 +4507,7 @@ body {
   text-align: center;
 }
 .flexnav li a {
+  background: #FFF;
   position: relative;
   display: block;
   padding: .80em;
@@ -4531,9 +4532,11 @@ body {
   z-index: 5;
 }
 .flexnav li ul li {
+  background: #FFF;
   font-size: 100%;
   position: relative;
   overflow: hidden;
+  width: 300px;
 }
 .flexnav li ul li:last-child {
   border-bottom: 1px solid transparent;
