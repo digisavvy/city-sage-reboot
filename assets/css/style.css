@@ -3466,6 +3466,7 @@ input#s {
 .infinite-scroll #navigation,
 .infinite-scroll.neverending #footer {
   display: none;
+  width: 100%;
 }
 
 /* Shows the footer again in case all posts have been loaded */
@@ -4769,6 +4770,7 @@ body {
 /* =Menu
 ----------------------------------------------- */
 .site-main [class*="navigation"] {
+  width: 100%;
   float: left;
   margin: 25px 0 1.5em;
   overflow: hidden;
@@ -5028,6 +5030,17 @@ span.comments-link {
 }
 #content .entry-meta a:hover, #content .entry-meta a:visited:hover {
   text-decoration: none;
+}
+
+.single .hentry {
+  margin: 0 0 0;
+}
+.single .site-main [class*="navigation"] {
+  margin: 0 0 1.5em;
+}
+
+#comments {
+  margin-top: 30px;
 }
 
 /*--------------------------------------------------------------
