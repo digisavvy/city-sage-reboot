@@ -78,7 +78,7 @@ add_action( 'tha_entry_after', 'add_rrssb_buttons' );
 function add_rrssb_buttons() {
     if ( !is_front_page() ) {
     	if ( 'yes' === get_theme_mod( 'some-like-it-neat_rrssb_share_buttons' ) ) { ?>
-
+            <h4>Share this:</h4>
     		<!-- Buttons start here. Copy this ul to your document. -->
     		<ul class="rrssb-buttons clearfix">
     			<?php if ( '1' == get_theme_mod( 'some-like-it-neat_enable_email' ) ) : ?>
