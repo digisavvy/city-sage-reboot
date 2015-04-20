@@ -5031,17 +5031,6 @@ span.comments-link {
   text-decoration: none;
 }
 
-.single .hentry {
-  margin: 0 0 0;
-}
-.single .site-main [class*="navigation"] {
-  margin: 0 0 1.5em;
-}
-
-#comments {
-  margin-top: 30px;
-}
-
 /*--------------------------------------------------------------
 6.4 Page Templates
 --------------------------------------------------------------*/
